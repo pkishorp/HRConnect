@@ -11,9 +11,9 @@ from my_utils.csv1 import HandleCSV
 
 def first_task():
 
-    data = HandleCSV.read_entire_csv()
+    data_ = HandleCSV.read_entire_csv()
     final_dict = {}
-    for i in data:
+    for i in data_:
         if int(i["SALARY"]) > 9000:
             number = str(i["PHONE_NUMBER"]).split(".")
             number = "".join(number)
